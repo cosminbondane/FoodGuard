@@ -1,10 +1,34 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <title></title>
 	<meta charset="utf-8" />
 </head>
 <body>
-    <p>test</p>
+
+    <div ng-include="'Script/app/layout/page.html'" class="wrapper"></div>
+
+    <!-- libraries -->
+    <script src="Script/lib/angular/angular.min.js"></script>
+    <script src="Script/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- angular app -->
+
+    <!-- Modules -->
+    <script src="Script/app/app.module.js"></script>
+    <script src="Script/app/layout/layout.module.js"></script>
+    <script src="Script/app/home/home.module.js"></script>
+    <script src="Script/app/product/product.module.js"></script>
+
+    <!-- Layout module -->
+    <script src="Script/app/layout/page.controller.js"></script>
+
+    <!-- Home module -->
+    <script src="Script/app/home/home.route.js"></script>
+
+    <!-- Product module -->
+    <script src="Script/app/product/product.route.js"></script>
+    <script src="Script/app/product/view/product.view.controller.js"></script>
+
 </body>
 </html>
