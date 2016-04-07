@@ -1,7 +1,7 @@
 /* var text-decoration */
 @font-face {
   font-family: myfont;
-  src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  src: url(/fonts/ufonts.com_tw-cen-mt.ttf);
 }
 /*--
     Common Css
@@ -60,7 +60,7 @@ a:active {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 /*--
@@ -142,7 +142,7 @@ a:active {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 /*--
@@ -291,7 +291,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #blog {
   padding-top: 75px;
   padding-bottom: 100px;
-  background: url("../images/blog/blog-bg.jpg");
+  background: url("/images/blog/blog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -306,7 +306,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 #blog .block .heading {
@@ -501,7 +501,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #subscribe {
   padding: 100px 0px;
   text-align: center;
-  background: url("../images/subscribe-bg.jpg");
+  background: url("/images/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -516,7 +516,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 #subscribe .block h1.heading {

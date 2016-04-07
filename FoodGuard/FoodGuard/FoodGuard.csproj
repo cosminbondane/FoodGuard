@@ -128,12 +128,38 @@
     <Content Include="Style\css\main.css" />
     <Content Include="Style\css\owl.carousel.css" />
     <Content Include="Style\css\responsive.css" />
-    <Content Include="Style\fonts\fontawesome-webfont.svg" />
-    <Content Include="Style\images\header.jpg" />
-    <Content Include="Style\images\slider\slider-img-1.jpg" />
-    <Content Include="Style\images\slider\slider-img-2.jpg" />
-    <Content Include="Style\images\slider\slider-img-3.jpg" />
-    <Content Include="Style\images\slider\slider-img-4.jpg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\blog\blog-bg.jpg" />
+    <Content Include="images\blog\blog-img-1.jpg" />
+    <Content Include="images\blog\blog-img-2.jpg" />
+    <Content Include="images\blog\blog-img-3.jpg" />
+    <Content Include="images\blog\blog-img-4.jpg" />
+    <Content Include="images\blog\blog-img-5.jpg" />
+    <Content Include="images\blog\blog-img-6.jpg" />
+    <Content Include="images\blog\blog-img-thumb-1.jpg" />
+    <Content Include="images\blog\blog-img-thumb-2.jpg" />
+    <Content Include="images\cooker-img.png" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\overlay-pattern.png" />
+    <Content Include="images\overlay-pattern2.png" />
+    <Content Include="images\photo\photo-1.jpg" />
+    <Content Include="images\photo\photo-2.jpg" />
+    <Content Include="images\photo\photo-3.jpg" />
+    <Content Include="images\photo\photo-4.jpg" />
+    <Content Include="images\products\bagles.png" />
+    <Content Include="images\products\bagles2.png" />
+    <Content Include="images\products\baguette.png" />
+    <Content Include="images\products\croissant.png" />
+    <Content Include="images\products\donuts.png" />
+    <Content Include="images\products\muffins.png" />
+    <Content Include="images\products\pretzel.png" />
+    <Content Include="images\slider\slider-img-1.jpg" />
+    <Content Include="images\slider\slider-img-2.jpg" />
+    <Content Include="images\slider\slider-img-3.jpg" />
+    <Content Include="images\slider\slider-img-4.jpg" />
+    <Content Include="images\subscribe-bg.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -152,11 +178,12 @@
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
     <Content Include="Script\app\home\home.module.js" />
-    <Content Include="Style\fonts\fontawesome-webfont.eot" />
-    <Content Include="Style\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Style\fonts\fontawesome-webfont.woff" />
-    <Content Include="Style\fonts\FontAwesome.otf" />
-    <Content Include="Style\fonts\ufonts.com_tw-cen-mt.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\ufonts.com_tw-cen-mt.ttf" />
+    <Content Include="images\blog\.DS_Store" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
