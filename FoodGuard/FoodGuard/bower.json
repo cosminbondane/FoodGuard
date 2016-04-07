@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "1.4.5",
-    "angular-ui-router": "0.2.12"
+    "angular-ui-router": "0.2.12",
+     "angular-resource": "~1.4.3"
   }
 }

@@ -559,6 +559,73 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #subscribe .block form .input-group-addon button:hover {
   background: #69a8a1;
 }
+
+
+/*--
+    subscribe Start
+--*/
+#home {
+  padding: 100px 0px;
+  text-align: center;
+  background: url("/images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+#home:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/overlay-pattern.png") #000000;
+  opacity: 0.3;
+}
+#home .block h1.heading {
+  color: #fff;
+}
+#home .block p {
+  padding: 25px 0px;
+  color: #fff;
+  font-size: 18px;
+}
+#home .block form .form-control {
+  width: 450px;
+  background: #fff;
+  opacity: 0.9;
+  border: none;
+  height: 65px;
+  border-radius: 0px;
+  font-size: 15px;
+}
+#home .block form .input-group-addon {
+  padding: 0px;
+  border: none;
+  background: none;
+}
+#home .block form .input-group-addon button {
+  width: 212px;
+  height: 65px;
+  border: none;
+  border-radius: 0px;
+  background: #7EC3BB;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+#home .block form .input-group-addon button:hover {
+  background: #69a8a1;
+}
+
 /*--
     contact-us Start
 --*/

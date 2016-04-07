@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('app.subscribe', []);
+        .module('app.subscribe', ['app.common']);
 })();
