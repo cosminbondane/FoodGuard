@@ -1,7 +1,9 @@
 ﻿<div ng-controller="pageController as vm">
-    <div class="header"></div>
+    <div ng-include="'Script/app/layout/top_menu.html'"></div>
 
     <section id="content" class="clearfix">
         <div ui-view></div>
     </section>
+
+    <div ng-include="'Script/app/layout/footer.html'"></div>
 </div>
