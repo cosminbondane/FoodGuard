@@ -124,6 +124,10 @@
     <Content Include="Script\app\product\product.route.js" />
     <Content Include="Script\app\product\view\product.view.controller.js" />
     <Content Include="Script\app\product\view\product.view.html" />
+    <Content Include="Script\app\subscribe\subscribe.module.js" />
+    <Content Include="Script\app\subscribe\subscribe.route.js" />
+    <Content Include="Script\app\subscribe\subscribe.controller.js" />
+    <Content Include="Script\app\subscribe\subscribe.html" />
     <Content Include="Style\css\animate.min.css" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\font-awesome.min.css" />

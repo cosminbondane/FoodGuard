@@ -5,6 +5,7 @@
         'ui.router',
         'app.home',
         'app.layout',
-        'app.product'
+        'app.product',
+        'app.subscribe'
 	]);
 })();
