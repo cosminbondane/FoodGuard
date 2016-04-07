@@ -128,6 +128,7 @@
     <Content Include="Script\app\subscribe\subscribe.route.js" />
     <Content Include="Script\app\subscribe\subscribe.controller.js" />
     <Content Include="Script\app\subscribe\subscribe.html" />
+    <Content Include="Script\app\subscribe\subscribe.service.js" />
     <Content Include="Style\css\animate.min.css" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\font-awesome.min.css" />
