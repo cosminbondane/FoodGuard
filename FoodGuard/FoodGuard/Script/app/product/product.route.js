@@ -3,11 +3,11 @@
 
     angular
         .module('app.product')
-        .config(configRoute);
+        .config(configProductRoute);
 
-    configRoute.$inject = ['$stateProvider'];
+    configProductRoute.$inject = ['$stateProvider'];
 
-    function configRoute($stateProvider) {
+    function configProductRoute($stateProvider) {
         $stateProvider
             .state('product', {
                 url: '/product',
@@ -20,4 +20,5 @@
                 emplateUrl: 'Script/app/product/add/product.add.view.html',
             });
     }
+
 })();

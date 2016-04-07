@@ -3,11 +3,14 @@
 
     angular
         .module('app.home')
-        .config(configRoute);
+        .config(configHomeRoute);
 
-    configRoute.$inject = ['$stateProvider'];
+    configHomeRoute.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-    function configRoute($stateProvider) {
+    function configHomeRoute($stateProvider, $urlRouterProvider) {
+
+        $urlRouterProvider.when('', '/home');
+
         $stateProvider
             .state('home', {
                 url: '/',
