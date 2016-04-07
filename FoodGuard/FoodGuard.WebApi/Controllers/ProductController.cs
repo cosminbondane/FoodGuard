@@ -23,5 +23,18 @@ namespace FoodGuard.WebApi.Controllers
                 return HandleException<IEnumerable<Product>>(ex);
             }
         }
+
+        [HttpGet]
+        public FoodGuardResponse<List<Product>> GetProductsByTypeId(int typeId)
+        {
+            try
+            {
+                return Response(ProductBusiness.GetProductsByTypeId(typeId));
+            }
+            catch (Exception ex)
+            {
+                return HandleException<List<Product>>(ex);
+            }
+        }
     }
 }
