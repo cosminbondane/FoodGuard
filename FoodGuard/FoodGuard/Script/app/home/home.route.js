@@ -3,19 +3,11 @@
 
     angular
         .module('app.home')
-        .config(configHomeRoute);
-
-    configHomeRoute.$inject = ['$stateProvider', '$urlRouterProvider'];
-
-    function configHomeRoute($stateProvider, $urlRouterProvider) {
-
-        $urlRouterProvider.when('', '/home');
-
-        $stateProvider
-            .state('home', {
-                url: '/',
-                templateUrl: 'Script/app/home/home.view.html'
-            });
-    }
-
+        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+            $stateProvider
+                .state('default', {
+                    url: '/home',
+                    templateUrl: 'Script/app/home/home.view.html'
+                });
+        }]);
 })();
