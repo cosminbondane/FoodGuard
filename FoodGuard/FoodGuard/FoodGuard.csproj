@@ -76,7 +76,26 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.ServiceInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Data.Dapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -86,6 +105,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -113,6 +136,8 @@
     <Content Include="index.html" />
     <Content Include="Script\app\app.route.js" />
     <Content Include="Script\app\app.run.js" />
+    <Content Include="Script\app\common\common.module.js" />
+    <Content Include="Script\app\common\common.resources.js" />
     <Content Include="Script\app\home\home.route.js" />
     <Content Include="Script\app\home\home.view.html" />
     <Content Include="Script\app\layout\footer.html" />
@@ -132,6 +157,7 @@
     <Content Include="Script\app\subscribe\subscribe.route.js" />
     <Content Include="Script\app\subscribe\subscribe.controller.js" />
     <Content Include="Script\app\subscribe\subscribe.html" />
+    <Content Include="Script\app\subscribe\subscribe.service.js" />
     <Content Include="Style\css\animate.min.css" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\font-awesome.min.css" />
@@ -144,7 +170,9 @@
     <Content Include="Style\images\slider\slider-img-2.jpg" />
     <Content Include="Style\images\slider\slider-img-3.jpg" />
     <Content Include="Style\images\slider\slider-img-4.jpg" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
