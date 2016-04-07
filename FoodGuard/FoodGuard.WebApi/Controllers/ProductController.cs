@@ -1,21 +1,27 @@
-﻿using FoodGuard.WebApi.Base;
-using FoodGuard.WebApi.Model;
+﻿using FoodGuard.Business;
+using FoodGuard.DAL.Entities;
+using FoodGuard.WebApi.Base;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace FoodGuard.WebApi.Controllers
 {
     public class ProductController : BaseFoodGuardController
     {
+        protected ProductBusiness ProductBusiness { get; } = new ProductBusiness();
+
         [HttpGet]
-        public FoodGuardResponse<ProductModel> GetDemoProduct()
+        public FoodGuardResponse<IEnumerable<Product>> GetProducts()
         {
-            ProductModel demoProduct = new ProductModel();
-            return Response(demoProduct);
+            try
+            {
+                return Response(ProductBusiness.GetAllProducts());
+            }
+            catch (Exception ex)
+            {
+                return HandleException<IEnumerable<Product>>(ex);
+            }
         }
     }
 }

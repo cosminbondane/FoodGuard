@@ -30,6 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\FoodGuard.DAL\bin\Debug\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.ServiceInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SFP.Core.ServiceInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Data.Dapper">
+      <HintPath>..\FoodGuard.DAL\bin\Debug\SFP.Data.Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\FoodGuardBusinessEnum.cs" />
+    <Compile Include="Exceptions\FoodGuardException.cs" />
+    <Compile Include="ProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoodGuard.DAL\FoodGuard.DAL.csproj">
+      <Project>{258e3fdd-1004-4a78-b0b9-69e21b73cdc8}</Project>
+      <Name>FoodGuard.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
