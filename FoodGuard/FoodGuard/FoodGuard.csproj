@@ -136,6 +136,8 @@
     <Content Include="index.html" />
     <Content Include="Script\app\app.route.js" />
     <Content Include="Script\app\app.run.js" />
+    <Content Include="Script\app\common\common.module.js" />
+    <Content Include="Script\app\common\common.resources.js" />
     <Content Include="Script\app\home\home.route.js" />
     <Content Include="Script\app\home\home.view.html" />
     <Content Include="Script\app\layout\footer.html" />
@@ -164,7 +166,9 @@
     <Content Include="Style\images\slider\slider-img-2.jpg" />
     <Content Include="Style\images\slider\slider-img-3.jpg" />
     <Content Include="Style\images\slider\slider-img-4.jpg" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />

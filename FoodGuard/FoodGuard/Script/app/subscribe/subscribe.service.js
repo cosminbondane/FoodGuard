@@ -10,8 +10,8 @@
     function SubscribeService(REST) {
         return {
             subscribe: function (email) {
-                return REST.getInstance().subscribe().save(email).$promise;
-            }
+                return REST.subscribe().save(email).$promise;
+           }
         }
     }
 })();
