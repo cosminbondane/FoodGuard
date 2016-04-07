@@ -370,13 +370,13 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   width: 100%;
 }
 #blog .block ul li .content-right {
-  padding: 40px 35px 23px;
-  font-size: 16px;
-  line-height: 26px;
-  float: right;
-  width: 50%;
-  height: 100%;
-  position: relative;
+    float: right;
+    font-size: 16px;
+    height: 100%;
+    line-height: 26px;
+    padding: 13px 35px 23px;
+    position: relative;
+    width: 50%;
 }
 #blog .block ul li .content-right:after {
   content: "";
@@ -710,20 +710,16 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   color: #FF4F02;
 }
 
-
-
-
-
 /* The ribbons */
 
 .corner-ribbon{
-  width: 224px;
+  width: 200px;
   background: #e43;
   position: absolute;
   top: 25px;
   left: -50px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   letter-spacing: 1px;
   color: #f0f0f0;
   transform: rotate(-45deg);
@@ -743,21 +739,19 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /* Different positions */
 
 .corner-ribbon.top-left{
-  top: -14px;
-  left: -77px;
+  top: 25px;
+  left: -50px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
 .corner-ribbon.top-right{
- right: -77px;
-    top: -14px;
+  top: 25px;
+  right: -50px;
   left: auto;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-
 
 .corner-ribbon.bottom-left{
   top: auto;
@@ -776,14 +770,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   -webkit-transform: rotate(-45deg);
 }
 
-
-.corner-ribbon .offer{
-  padding-left:2px;
-  padding-top:2px;
-  font-size:20px;
-  color:#fff;
-}
-
 /* Colors */
 
 .corner-ribbon.white{background: #f0f0f0; color: #555;}
@@ -794,9 +780,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 .corner-ribbon.turquoise{background: #1b9;}
 .corner-ribbon.purple{background: #95b;}
 .corner-ribbon.red{background: #e43;}
-.corner-ribbon.orange{background: #fa7036;}
+.orange{background: #feaf66;line-height:40px; color:#fff; font-size:19px; font-weight: bold;}
 .corner-ribbon.yellow{background: #ec0;}
-
 
 .new-price {
     color: #ff530a;
