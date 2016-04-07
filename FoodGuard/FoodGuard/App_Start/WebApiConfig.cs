@@ -1,5 +1,7 @@
 ﻿using FoodGuard.Util;
 using Newtonsoft.Json.Serialization;
+using SFP.Core.ServiceInjection;
+using SFP.Data.Dapper.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +32,7 @@ namespace FoodGuard
 
             // camelCase properties through json
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            DependencyServiceInjection.RegisterType(typeof(BaseDapperRepository<>), typeof(BaseDapperRepository<>));
         }
     }
 }
