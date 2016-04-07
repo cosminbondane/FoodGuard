@@ -99,6 +99,7 @@
     <Compile Include="Base\BaseFoodGuardController.cs" />
     <Compile Include="Base\BaseResponse.cs" />
     <Compile Include="Base\FoodGuardResponse.cs" />
+    <Compile Include="Controllers\OfferController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Model\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
