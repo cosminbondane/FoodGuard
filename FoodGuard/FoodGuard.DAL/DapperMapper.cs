@@ -19,6 +19,7 @@ namespace FoodGuard.DAL
             Map(f => f.Price).Column("Price");
             Map(f => f.ExpirationDate).Column("Expiration");
             Map(f => f.TypeId).Column("TypeID");
+            Map(f => f.Photo).Column("Photo");
         }
     }
 

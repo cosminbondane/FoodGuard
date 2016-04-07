@@ -20,5 +20,8 @@ namespace FoodGuard.DAL.Entities
 
         [SqlLamColumn(Name = "TypeId")]
         public int TypeId { get; set; }
+
+        [SqlLamColumn(Name = "Photo")]
+        public string Photo { get; set; }
     }
 }
