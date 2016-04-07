@@ -15,9 +15,23 @@
                 controller: 'productViewController',
                 controllerAs: 'vm'
             })
+            .state('products', {
+                url: '/products',
+                templateUrl: 'Script/app/product/list/product.list.html',
+                controller: 'productListController',
+                controllerAs: 'vm'
+            })
             .state('product.add', {
                 url: '/product/add',
-                emplateUrl: 'Script/app/product/add/product.add.view.html',
+                templateUrl: 'Script/app/product/add/product.add.view.html',
+                controller: 'productAddController',
+                controllerAs: 'vm'
+            })
+            .state('product.edit', {
+                url: '/product/edit/:id',
+                templateUrl: 'Script/app/product/add/product.add.view.html',
+                controller: 'productAddController',
+                controllerAs: 'vm'
             });
     }
 })();

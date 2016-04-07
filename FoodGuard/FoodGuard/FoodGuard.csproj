@@ -118,6 +118,10 @@
     <Content Include="Script\app\layout\page.controller.js" />
     <Content Include="Script\app\layout\page.html" />
     <Content Include="Script\app\layout\top_menu.html" />
+    <Content Include="Script\app\product\add\product.add.controller.js" />
+    <Content Include="Script\app\product\list\product.list.controller.js" />
+    <Content Include="Script\app\product\list\product.list.html" />
+    <Content Include="Script\app\product\product.service.js" />
     <Content Include="Script\app\product\product.module.js" />
     <Content Include="Script\app\product\product.route.js" />
     <Content Include="Script\app\product\view\product.view.controller.js" />
@@ -157,6 +161,7 @@
     <Content Include="Style\fonts\fontawesome-webfont.woff" />
     <Content Include="Style\fonts\FontAwesome.otf" />
     <Content Include="Style\fonts\ufonts.com_tw-cen-mt.ttf" />
+    <Content Include="Script\app\product\add\product.add.view.html" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -166,8 +171,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Script\app\product\add\" />
-    <Folder Include="Script\app\product\edit\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoodGuard.WebApi\FoodGuard.WebApi.csproj">
