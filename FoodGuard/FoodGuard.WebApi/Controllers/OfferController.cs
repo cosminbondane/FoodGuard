@@ -15,7 +15,7 @@ namespace FoodGuard.WebApi.Controllers
         protected OfferBusiness OfferBusiness { get; } = new OfferBusiness();
 
         [HttpGet]
-        public FoodGuardResponse<List<OfferProduct>> GetOfferByTypeId(int typeId, int day)
+        public FoodGuardResponse<List<OfferProduct>> GetOffersByTypeId(int typeId, int day)
         {
             try
             {
