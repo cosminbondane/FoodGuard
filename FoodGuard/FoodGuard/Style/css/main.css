@@ -273,7 +273,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
     about-us Start
 --*/
 #about-us {
-  padding: 100px 0px;
+  padding: 50px 0px;
   background: #F6F6F6;
 }
 #about-us .block {
@@ -281,7 +281,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 }
 #about-us .block p {
   color: #959595;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 26px;
   padding: 40px 0px;
 }
@@ -591,7 +591,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #home .block p {
   padding: 25px 0px;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
 }
 #home .block form .form-control {
   width: 450px;

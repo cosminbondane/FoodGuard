@@ -132,6 +132,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="images\blog\blog-bg.jpg" />
     <Content Include="images\blog\blog-img-1.jpg" />
@@ -229,6 +230,11 @@
     <Content Include="Style\fonts\ufonts.com_tw-cen-mt.ttf" />
     <Content Include="Script\app\product\add\product.add.view.html" />
     <Content Include="images\blog\.DS_Store" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\ufonts.com_tw-cen-mt.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
