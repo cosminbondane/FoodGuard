@@ -3,11 +3,11 @@
 
     angular
         .module('app.product')
-        .controller('productViewController', productViewController);
+        .controller('productOfferController', productOfferController);
 
-    productViewController.$inject = ['ProductService'];
+    productOfferController.$inject = ['ProductService'];
 
-    function productViewController(ProductService) {
+    function productOfferController(ProductService) {
         var vm = this;
         vm.products = [];
         vm.right = 1;
@@ -16,9 +16,9 @@
 
         function init() {
 
-            ProductService.getProductList().then(function (response) {
-                if (response.success) {
-                    vm.products = response.data.data;
+           ProductService.getProductList().then(function (response) {
+                if (response != undefined) {
+                    vm.products = response;
                 }
             });
 

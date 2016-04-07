@@ -10,8 +10,8 @@
     function appRun($rootScope) {
 
         $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState) {
-            console.log('To state: ' + toState);
-            console.log('From state: ' + fromState);
+            //console.log('To state: ' + toState);
+            //console.log('From state: ' + fromState);
         });
     }
 
