@@ -5,9 +5,9 @@
         .module('app.product')
         .factory('ProductService', ProductService);
 
-    ProductService.$inject = ['$q'];
+    ProductService.$inject = ['$q', 'Rest'];
 
-    function ProductService($q) {
+    function ProductService($q, RestService) {
 
         var service = {};
 
@@ -82,22 +82,31 @@
 
         }
 
-        function addProduct(newProduct) {
 
+        function getProductByTypeId(productId) {
+
+        }
+
+        function addProduct(newProduct) {
         }
 
         function editProduct(currentProduct) {
-
         }
 
         function viewProduct(productId) {
-
         }
 
         function getProductList() {
             var deferred = $q.defer();
 
-            deferred.resolve(products);
+            RestService.products().get().$promise.then(function (response) {
+                if (response.success) {
+                    deferred.resolve(response.data);
+                } else {
+                    deferred.reject(response.error);
+                }
+            });
+
             return deferred.promise;
         }
 

@@ -12,7 +12,8 @@
         var factory = function () { };
 
         var service = {
-            subscribe: function () { return $resource("/api/Subscribe/Subscribe"); }
+            subscribe: function () { return $resource("/api/Subscribe/Subscribe"); },
+            products: function () { return $resource("/api/Product/GetProducts") }
         };
 
         return service;
