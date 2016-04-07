@@ -3,7 +3,7 @@
   "description": "SFP FedEx",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "1.5.3",
-    "angular-ui-router": "0.2.18"
+    "angular": "1.4.5",
+    "angular-ui-router": "0.2.12"
   }
 }

@@ -30,6 +30,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\lib\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DapperExtensions">
+      <HintPath>..\lib\DapperExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\lib\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LambdaSqlBuilder">
+      <HintPath>..\lib\LambdaSqlBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Data.Dapper">
+      <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DapperMapper.cs" />
+    <Compile Include="Entities\Charity.cs" />
+    <Compile Include="Entities\CharityProdType.cs" />
+    <Compile Include="Entities\Offer.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\ProductOffer.cs" />
+    <Compile Include="Entities\ProductType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

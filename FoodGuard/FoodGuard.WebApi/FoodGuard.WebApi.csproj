@@ -34,12 +34,52 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SFP.Core.Base">
+      <HintPath>..\lib\SFP.Core.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SFP.Core.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.Localization">
+      <HintPath>..\lib\SFP.Core.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.Profilers">
+      <HintPath>..\lib\SFP.Core.Profilers.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Core.ServiceInjection">
+      <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Data.Dapper">
+      <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Data.Database">
+      <HintPath>..\lib\SFP.Data.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Services.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SFP.Services.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Services.Logging.DAL">
+      <HintPath>..\lib\SFP.Services.Logging.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Services.Logging.Data">
+      <HintPath>..\lib\SFP.Services.Logging.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Services.Logging.Facade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SFP.Services.Logging.Facade.dll</HintPath>
+    </Reference>
+    <Reference Include="SFP.Web.Api">
+      <HintPath>..\lib\SFP.Web.Api.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
       <Private>True</Private>
@@ -67,6 +107,10 @@
     <ProjectReference Include="..\FoodGuard.Business\FoodGuard.Business.csproj">
       <Project>{22c959d3-de2e-4dd8-a78e-112f2fd4fea7}</Project>
       <Name>FoodGuard.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodGuard.DAL\FoodGuard.DAL.csproj">
+      <Project>{258e3fdd-1004-4a78-b0b9-69e21b73cdc8}</Project>
+      <Name>FoodGuard.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

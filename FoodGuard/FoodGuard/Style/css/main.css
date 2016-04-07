@@ -1,7 +1,7 @@
 /* var text-decoration */
 @font-face {
   font-family: myfont;
-  src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+  src: url(/fonts/ufonts.com_tw-cen-mt.ttf);
 }
 /*--
     Common Css
@@ -60,7 +60,7 @@ a:active {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 /*--
@@ -142,7 +142,7 @@ a:active {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 /*--
@@ -153,7 +153,7 @@ nav {
   width: 100%;
 }
 nav .block {
-  margin-top: -85px;
+  /*margin-top: -85px;*/
   background: #fff;
   padding: 25px 40px;
   background: rgba(255, 255, 255, 0.89);
@@ -291,7 +291,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #blog {
   padding-top: 75px;
   padding-bottom: 100px;
-  background: url("../images/blog/blog-bg.jpg");
+  background: url("/images/blog/blog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -306,7 +306,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 #blog .block .heading {
@@ -370,13 +370,13 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   width: 100%;
 }
 #blog .block ul li .content-right {
-  padding: 40px 35px 23px;
-  font-size: 16px;
-  line-height: 26px;
-  float: right;
-  width: 50%;
-  height: 100%;
-  position: relative;
+    float: right;
+    font-size: 16px;
+    height: 100%;
+    line-height: 26px;
+    padding: 13px 35px 23px;
+    position: relative;
+    width: 50%;
 }
 #blog .block ul li .content-right:after {
   content: "";
@@ -393,7 +393,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   margin-left: -15px;
 }
 #blog .block ul li .content-left {
-  padding: 40px 35px 23px;
+  padding: 13px 35px 23px;
   width: 50%;
   height: 100%;
   float: left;
@@ -501,7 +501,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 #subscribe {
   padding: 100px 0px;
   text-align: center;
-  background: url("../images/subscribe-bg.jpg");
+  background: url("/images/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -516,7 +516,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/overlay-pattern.png") #000000;
+  background: url("/images/overlay-pattern.png") #000000;
   opacity: 0.3;
 }
 #subscribe .block h1.heading {
@@ -710,20 +710,16 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   color: #FF4F02;
 }
 
-
-
-
-
 /* The ribbons */
 
 .corner-ribbon{
-  width: 224px;
+  width: 200px;
   background: #e43;
   position: absolute;
   top: 25px;
   left: -50px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   letter-spacing: 1px;
   color: #f0f0f0;
   transform: rotate(-45deg);
@@ -743,21 +739,19 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 /* Different positions */
 
 .corner-ribbon.top-left{
-  top: -14px;
-  left: -77px;
+  top: 25px;
+  left: -50px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
 .corner-ribbon.top-right{
- right: -77px;
-    top: -14px;
+  top: 25px;
+  right: -50px;
   left: auto;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-
 
 .corner-ribbon.bottom-left{
   top: auto;
@@ -776,14 +770,6 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   -webkit-transform: rotate(-45deg);
 }
 
-
-.corner-ribbon .offer{
-  padding-left:2px;
-  padding-top:2px;
-  font-size:20px;
-  color:#fff;
-}
-
 /* Colors */
 
 .corner-ribbon.white{background: #f0f0f0; color: #555;}
@@ -794,9 +780,8 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 .corner-ribbon.turquoise{background: #1b9;}
 .corner-ribbon.purple{background: #95b;}
 .corner-ribbon.red{background: #e43;}
-.corner-ribbon.orange{background: #fa7036;}
+.orange{background: #feaf66;line-height:40px; color:#fff; font-size:19px; font-weight: bold;}
 .corner-ribbon.yellow{background: #ec0;}
-
 
 .new-price {
     color: #ff530a;

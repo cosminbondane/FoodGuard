@@ -9,8 +9,7 @@ var isDefined = angular.isDefined,
     isArray = angular.isArray,
     forEach = angular.forEach,
     extend = angular.extend,
-    copy = angular.copy,
-    toJson = angular.toJson;
+    copy = angular.copy;
 
 function inherit(parent, extra) {
   return extend(new (extend(function() {}, { prototype: parent }))(), extra);
@@ -56,7 +55,7 @@ function objectKeys(object) {
   }
   var result = [];
 
-  forEach(object, function(val, key) {
+  angular.forEach(object, function(val, key) {
     result.push(key);
   });
   return result;
@@ -97,7 +96,7 @@ function inheritParams(currentParams, newParams, $current, $to) {
   var parents = ancestors($current, $to), parentParams, inherited = {}, inheritList = [];
 
   for (var i in parents) {
-    if (!parents[i] || !parents[i].params) continue;
+    if (!parents[i].params) continue;
     parentParams = objectKeys(parents[i].params);
     if (!parentParams.length) continue;
 
@@ -175,7 +174,7 @@ function omit(obj) {
   var copy = {};
   var keys = Array.prototype.concat.apply(Array.prototype, Array.prototype.slice.call(arguments, 1));
   for (var key in obj) {
-    if (indexOf(keys, key) == -1) copy[key] = obj[key];
+    if (keys.indexOf(key) == -1) copy[key] = obj[key];
   }
   return copy;
 }
@@ -190,12 +189,10 @@ function pluck(collection, key) {
 }
 
 function filter(collection, callback) {
-  var array = isArray(collection);
-  var result = array ? [] : {};
+  var result = isArray(collection) ? [] : {};
   forEach(collection, function(val, i) {
-    if (callback(val, i)) {
-      result[array ? result.length : i] = val;
-    }
+    if (callback(val, i))
+      result[i] = val;
   });
   return result;
 }
