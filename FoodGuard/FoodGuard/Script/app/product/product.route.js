@@ -21,14 +21,14 @@
                 controller: 'productListController',
                 controllerAs: 'vm'
             })
-            .state('product.add', {
-                url: '/product/add',
+            .state('products_add', {
+                url: '/products/add',
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
             })
-            .state('product.edit', {
-                url: '/product/edit/:id',
+            .state('products_edit', {
+                url: '/products/edit/:id',
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
