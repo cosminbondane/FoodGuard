@@ -9,10 +9,10 @@
 
     function configRoute($stateProvider) {
         $stateProvider
-            .state('offer', {
-                url: '/offer',
-                templateUrl: 'Script/app/product/offer/product.offer.html',
-                controller: 'productOfferController',
+            .state('product', {
+                url: '/product',
+                templateUrl: 'Script/app/product/view/product.view.html',
+                controller: 'productViewController',
                 controllerAs: 'vm'
             })
             .state('products', {
@@ -21,14 +21,14 @@
                 controller: 'productListController',
                 controllerAs: 'vm'
             })
-            .state('products_add', {
-                url: '/products/add',
+            .state('product.add', {
+                url: '/product/add',
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
             })
-            .state('products_edit', {
-                url: '/products/edit/:id',
+            .state('product.edit', {
+                url: '/product/edit/:id',
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
