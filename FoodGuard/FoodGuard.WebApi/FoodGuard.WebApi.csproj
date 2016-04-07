@@ -35,43 +35,43 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="SFP.Core.Base">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Core.Base.dll</HintPath>
+      <HintPath>..\lib\SFP.Core.Base.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Core.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\SFP.Core.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Core.Localization">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Core.Localization.dll</HintPath>
+      <HintPath>..\lib\SFP.Core.Localization.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Core.Profilers">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Core.Profilers.dll</HintPath>
+      <HintPath>..\lib\SFP.Core.Profilers.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Core.ServiceInjection">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Core.ServiceInjection.dll</HintPath>
+      <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Data.Dapper">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Data.Dapper.dll</HintPath>
+      <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Data.Database">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Data.Database.dll</HintPath>
+      <HintPath>..\lib\SFP.Data.Database.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Services.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\SFP.Services.Logging.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Services.Logging.DAL">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Services.Logging.DAL.dll</HintPath>
+      <HintPath>..\lib\SFP.Services.Logging.DAL.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Services.Logging.Data">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Services.Logging.Data.dll</HintPath>
+      <HintPath>..\lib\SFP.Services.Logging.Data.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Services.Logging.Facade, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\SFP.Services.Logging.Facade.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Web.Api">
-      <HintPath>..\FoodGuard.DAL\lib\SFP.Web.Api.dll</HintPath>
+      <HintPath>..\lib\SFP.Web.Api.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

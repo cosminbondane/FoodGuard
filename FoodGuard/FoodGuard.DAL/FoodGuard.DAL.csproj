@@ -31,22 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Dapper">
-      <HintPath>lib\Dapper.dll</HintPath>
+      <HintPath>..\lib\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="DapperExtensions">
-      <HintPath>lib\DapperExtensions.dll</HintPath>
+      <HintPath>..\lib\DapperExtensions.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
-      <HintPath>lib\EntityFramework.dll</HintPath>
+      <HintPath>..\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
-      <HintPath>lib\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\lib\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="LambdaSqlBuilder">
-      <HintPath>lib\LambdaSqlBuilder.dll</HintPath>
+      <HintPath>..\lib\LambdaSqlBuilder.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Data.Dapper">
-      <HintPath>lib\SFP.Data.Dapper.dll</HintPath>
+      <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

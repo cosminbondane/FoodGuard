@@ -35,7 +35,7 @@
     </Reference>
     <Reference Include="SFP.Core.ServiceInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\SFP.Core.ServiceInjection.dll</HintPath>
+      <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
     </Reference>
     <Reference Include="SFP.Data.Dapper">
       <HintPath>..\FoodGuard.DAL\bin\Debug\SFP.Data.Dapper.dll</HintPath>

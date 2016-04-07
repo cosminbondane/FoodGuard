@@ -17,6 +17,52 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FoodGuard.Database", "FoodG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodGuard.Util", "FoodGuard.Util\FoodGuard.Util.csproj", "{868B730C-68F6-494C-A3DD-610848FF0A37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{D2F5AE16-9D80-46CA-8418-D2412F0C673D}"
+	ProjectSection(SolutionItems) = preProject
+		lib\Dapper.dll = lib\Dapper.dll
+		lib\DapperExtensions.dll = lib\DapperExtensions.dll
+		lib\EntityFramework.dll = lib\EntityFramework.dll
+		lib\EntityFramework.SqlServer.dll = lib\EntityFramework.SqlServer.dll
+		lib\ICSharpCode.SharpZipLib.dll = lib\ICSharpCode.SharpZipLib.dll
+		lib\LambdaSqlBuilder.dll = lib\LambdaSqlBuilder.dll
+		lib\log4net.dll = lib\log4net.dll
+		lib\MongoDB.Bson.dll = lib\MongoDB.Bson.dll
+		lib\MongoDB.Driver.Core.dll = lib\MongoDB.Driver.Core.dll
+		lib\MongoDB.Driver.dll = lib\MongoDB.Driver.dll
+		lib\MongoDB.Driver.Legacy.dll = lib\MongoDB.Driver.Legacy.dll
+		lib\SFP.Core.Base.dll = lib\SFP.Core.Base.dll
+		lib\SFP.Core.Contracts.dll = lib\SFP.Core.Contracts.dll
+		lib\SFP.Core.Facebook.dll = lib\SFP.Core.Facebook.dll
+		lib\SFP.Core.Localization.dll = lib\SFP.Core.Localization.dll
+		lib\SFP.Core.Profilers.dll = lib\SFP.Core.Profilers.dll
+		lib\SFP.Core.ServiceInjection.dll = lib\SFP.Core.ServiceInjection.dll
+		lib\SFP.Core.Twitter.dll = lib\SFP.Core.Twitter.dll
+		lib\SFP.Core.Utils.dll = lib\SFP.Core.Utils.dll
+		lib\SFP.Data.Dapper.dll = lib\SFP.Data.Dapper.dll
+		lib\SFP.Data.Database.dll = lib\SFP.Data.Database.dll
+		lib\SFP.Data.Mongo.dll = lib\SFP.Data.Mongo.dll
+		lib\SFP.Services.Audit.DAL.dll = lib\SFP.Services.Audit.DAL.dll
+		lib\SFP.Services.Logging.DAL.dll = lib\SFP.Services.Logging.DAL.dll
+		lib\SFP.Services.Logging.Data.dll = lib\SFP.Services.Logging.Data.dll
+		lib\SFP.Services.Logging.dll = lib\SFP.Services.Logging.dll
+		lib\SFP.Services.Logging.EventViewer.dll = lib\SFP.Services.Logging.EventViewer.dll
+		lib\SFP.Services.Logging.Facade.dll = lib\SFP.Services.Logging.Facade.dll
+		lib\SFP.Services.Logging.Log4Net.dll = lib\SFP.Services.Logging.Log4Net.dll
+		lib\SFP.Services.Notification.Data.dll = lib\SFP.Services.Notification.Data.dll
+		lib\SFP.Services.Notification.dll = lib\SFP.Services.Notification.dll
+		lib\SFP.Services.Notification.Email.dll = lib\SFP.Services.Notification.Email.dll
+		lib\SFP.Services.Notification.Mongo.dll = lib\SFP.Services.Notification.Mongo.dll
+		lib\SFP.Services.Scheduler.Contracts.dll = lib\SFP.Services.Scheduler.Contracts.dll
+		lib\SFP.Services.Scheduler.Data.dll = lib\SFP.Services.Scheduler.Data.dll
+		lib\SFP.Services.Scheduler.dll = lib\SFP.Services.Scheduler.dll
+		lib\SFP.Services.Scheduler.Engine.dll = lib\SFP.Services.Scheduler.Engine.dll
+		lib\SFP.Services.Scheduler.Executors.dll = lib\SFP.Services.Scheduler.Executors.dll
+		lib\SFP.Services.Security.dll = lib\SFP.Services.Security.dll
+		lib\SFP.Services.TemplateEngine.dll = lib\SFP.Services.TemplateEngine.dll
+		lib\SFP.Services.TempleteEngine.Data.dll = lib\SFP.Services.TempleteEngine.Data.dll
+		lib\SFP.Web.Api.dll = lib\SFP.Web.Api.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
