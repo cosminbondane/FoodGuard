@@ -69,6 +69,7 @@
     <Compile Include="Entities\Charity.cs" />
     <Compile Include="Entities\CharityProdType.cs" />
     <Compile Include="Entities\Offer.cs" />
+    <Compile Include="Entities\OfferProduct.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductOffer.cs" />
     <Compile Include="Entities\ProductType.cs" />
