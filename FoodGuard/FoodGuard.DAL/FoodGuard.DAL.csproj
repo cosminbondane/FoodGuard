@@ -72,6 +72,7 @@
     <Compile Include="Entities\OfferProduct.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductOffer.cs" />
+    <Compile Include="Entities\ProductProdType.cs" />
     <Compile Include="Entities\ProductType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
