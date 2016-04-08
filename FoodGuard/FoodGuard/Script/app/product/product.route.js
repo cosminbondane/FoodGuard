@@ -32,6 +32,12 @@
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
-            });
+            })
+            .state('offer_days', {
+                url: '/offer/days/:day',
+                templateUrl: 'Script/app/product/offer/product.offer.html',
+                controller: 'productOfferController',
+                controllerAs: 'vm'
+            })
     }
 })();
