@@ -46,7 +46,7 @@
         function getProductsByTypeId(typeId) {
             var deferred = $q.defer();
 
-            RestService.productsByTypeId(typeId).get().$promise.then(function (response) {
+            RestService.productsByTypeId().get({ typeId: typeId }).$promise.then(function (response) {
                 if (response.success) {
                     deferred.resolve(response.data);
                 } else {
@@ -60,8 +60,7 @@
         function getOffersByTypeId(typeId, days) {
             var deferred = $q.defer();
 
-            alert(typeId + " " + days);
-            RestService.offersByTypeId(typeId, days).get().$promise.then(function (response) {
+            RestService.offersByTypeId().get({ typeId: typeId, days: days }).$promise.then(function (response) {
                 if (response.success) {
                     deferred.resolve(response.data);
                 } else {
@@ -71,7 +70,6 @@
 
             return deferred.promise;
         }
-
 
         return service;
     }
