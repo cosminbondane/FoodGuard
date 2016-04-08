@@ -114,6 +114,10 @@
       <Project>{258e3fdd-1004-4a78-b0b9-69e21b73cdc8}</Project>
       <Name>FoodGuard.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FoodGuard.Email.Provider\FoodGuard.Email.Provider.csproj">
+      <Project>{c5330e2f-1ce1-4198-9f7f-133a0cd1029c}</Project>
+      <Name>FoodGuard.Email.Provider</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

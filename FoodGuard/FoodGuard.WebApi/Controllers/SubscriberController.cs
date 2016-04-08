@@ -1,5 +1,6 @@
 ﻿using FoodGuard.Business;
 using FoodGuard.DAL.Entities;
+using FoodGuard.Email.Provider;
 using FoodGuard.WebApi.Base;
 using System;
 using System.Collections.Generic;
@@ -14,11 +15,14 @@ namespace FoodGuard.WebApi.Controllers
     {
         protected SubscriberBusiness SubscriberBusiness { get; } = new SubscriberBusiness();
 
+        protected CharityEmailProvider CharityEmailProvider {get;} = new CharityEmailProvider();
+
         [HttpPost]
         public FoodGuardResponse<int> Subscribe(Charity charity)
         {
             try
             {
+                CharityEmailProvider.StartForOne(charity.Email);
                 return Response(SubscriberBusiness.Subscribe(charity));
             }
             catch (Exception ex)
