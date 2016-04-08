@@ -10,10 +10,10 @@
                                 <div class="blog-img">
                                     <img src="{{product.photo}}" alt="blog-img">
                                 </div>
-                                <div class="orange"><span class="offer">20% off</span></div>
+                                <div class="orange"><span class="offer">{{product.percentage}}% off</span></div>
                                 <div class="content-right">
-                                    <h3>{{product.productName}}</h3>
-                                    <p class="new-price">$ {{product.newPrice}}</p>
+                                    <h3>{{product.name}}</h3>
+                                    <p class="new-price">$ {{product.newPrice | number:2}}</p>
                                     <p class="old-price">was <span class="old-price-val">$ {{product.price}}</span></p>
                                 </div>
                             </div>
@@ -22,10 +22,10 @@
                                 <div class="blog-img-2">
                                     <img src="{{product.photo}}" alt="blog-img-2">
                                 </div>
-                                <div class="orange"><span class="offer">20% off</span></div>
+                                <div class="orange"><span class="offer">{{product.percentage}} off</span></div>
                                 <div class="content-left">
-                                    <h3>{{product.productName}}</h3>
-                                    <p class="new-price">$ {{product.newPrice}}</p>
+                                    <h3>{{product.name}}</h3>
+                                    <p class="new-price">$ {{product.newPrice | number:2}}</p>
                                     <p class="old-price">was <span class="old-price-val">$ {{product.price}}</span></p>
                                 </div>
                             </div>
