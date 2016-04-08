@@ -12,6 +12,8 @@ namespace FoodGuard.DAL.Entities
 
         public decimal Price { get; set; }
 
+        public decimal NewPrice { get; set; }
+
         public DateTime ExpirationDate { get; set; }
 
         public int TypeId { get; set; }

@@ -23,5 +23,8 @@ namespace FoodGuard.DAL.Entities
 
         [SqlLamColumn(Name = "Photo")]
         public string Photo { get; set; }
+
+        [SqlLamColumn(Name = "NewPrice")]
+        public decimal NewPrice { get; set; }
     }
 }
