@@ -16,7 +16,7 @@
                 controllerAs: 'vm'
             })
             .state('products', {
-                url: '/products',
+                url: '/products/:type',
                 templateUrl: 'Script/app/product/list/product.list.html',
                 controller: 'productListController',
                 controllerAs: 'vm'

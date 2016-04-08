@@ -16,83 +16,16 @@
         service.editProduct = editProduct;
         service.viewProduct = viewProduct;
         service.getProductList = getProductList;
-
-        //hardcoded product list
-        var product = {
-            name: "Supa de galuste",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 10,
-            newPrice: 4,
-            expirationDate: '10/01/2015',
-            description: "Cea mai buna supa ever"
-        }
-        var product1 = {
-            name: "Orez cu lapte ",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 15,
-            newPrice: 3,
-            expirationDate: '10/01/2015',
-            description: "Bun Bun"
-        }
-        var product2 = {
-            name: "Pateu vegetal",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 20,
-            newPrice: 13,
-            expirationDate: '10/01/2015',
-            description: "Bio"
-        }
-        var product3 = {
-            name: "Supa de galuste",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 10,
-            newPrice: 4,
-            expirationDate: '10/01/2015',
-            description: "Cea mai buna supa ever"
-        }
-        var product4 = {
-            name: "Orez cu lapte ",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 15,
-            newPrice: 3,
-            expirationDate: '10/01/2015',
-            description: "Bun Bun"
-        }
-        var product5 = {
-            name: "Pateu vegetal",
-            image: "http://foodguard.smallfootprint.net/images/blog/blog-img-1.jpg",
-            oldPrice: 20,
-            newPrice: 13,
-            expirationDate: '10/01/2015',
-            description: "Bio"
-        }
-
-        var products = [];
-
-        products.push(product);
-        products.push(product1);
-        products.push(product2);
-        products.push(product3);
-        products.push(product4);
-        products.push(product5);
-
-        //
+        service.getProductsByTypeId = getProductsByTypeId;
+        service.getOffersByTypeId = getOffersByTypeId;
 
         function getProductById(productId) {
 
         }
-
-
-        function getProductByTypeId(productId) {
-
-        }
-
         function addProduct(newProduct) {
         }
-
         function editProduct(currentProduct) {
         }
-
         function viewProduct(productId) {
         }
 
@@ -109,6 +42,35 @@
 
             return deferred.promise;
         }
+
+        function getProductsByTypeId(typeId) {
+            var deferred = $q.defer();
+
+            RestService.productsByTypeId(typeId).get().$promise.then(function (response) {
+                if (response.success) {
+                    deferred.resolve(response.data);
+                } else {
+                    deferred.reject(response.error);
+                }
+            });
+
+            return deferred.promise;
+        }
+
+        function getOffersByTypeId(typeId, days) {
+            var deferred = $q.defer();
+
+            RestService.offersByTypeId(typeId, days).get().$promise.then(function (response) {
+                if (response.success) {
+                    deferred.resolve(response.data);
+                } else {
+                    deferred.reject(response.error);
+                }
+            });
+
+            return deferred.promise;
+        }
+
 
         return service;
     }
