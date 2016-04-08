@@ -76,13 +76,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Microsoft.Practices.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.Unity.Configuration">
-      <HintPath>..\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
-    </Reference>
     <Reference Include="SFP.Core.ServiceInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
@@ -92,10 +85,6 @@
       <HintPath>..\lib\SFP.Data.Dapper.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -105,10 +94,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -132,45 +117,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
-    <Content Include="images\blog\blog-bg.jpg" />
-    <Content Include="images\blog\blog-img-1.jpg" />
-    <Content Include="images\blog\blog-img-2.jpg" />
-    <Content Include="images\blog\blog-img-3.jpg" />
-    <Content Include="images\blog\blog-img-4.jpg" />
-    <Content Include="images\blog\blog-img-5.jpg" />
-    <Content Include="images\blog\blog-img-6.jpg" />
-    <Content Include="images\blog\blog-img-thumb-1.jpg" />
-    <Content Include="images\blog\blog-img-thumb-2.jpg" />
-    <Content Include="images\cooker-img.png" />
-    <Content Include="images\header.jpg" />
-    <Content Include="images\home-bg.jpg" />
-    <Content Include="images\logo.jpg" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\overlay-pattern.png" />
-    <Content Include="images\overlay-pattern2.png" />
-    <Content Include="images\photo\photo-1.jpg" />
-    <Content Include="images\photo\photo-2.jpg" />
-    <Content Include="images\photo\photo-3.jpg" />
-    <Content Include="images\photo\photo-4.jpg" />
-    <Content Include="images\products\bagles.png" />
-    <Content Include="images\products\bagles2.png" />
-    <Content Include="images\products\baguette.png" />
-    <Content Include="images\products\croissant.png" />
-    <Content Include="images\products\donuts.png" />
-    <Content Include="images\products\muffins.png" />
-    <Content Include="images\products\pretzel.png" />
-    <Content Include="images\slider\slider-img-1.jpg" />
-    <Content Include="images\slider\slider-img-2.jpg" />
-    <Content Include="images\slider\slider-img-3.jpg" />
-    <Content Include="images\slider\slider-img-4.jpg" />
-    <Content Include="images\subscribe-bg.jpg" />
     <Content Include="index.html" />
     <Content Include="Script\app\app.route.js" />
     <Content Include="Script\app\app.run.js" />
-    <Content Include="Script\app\common\common.module.js" />
-    <Content Include="Script\app\common\common.resources.js" />
     <Content Include="Script\app\home\home.route.js" />
     <Content Include="Script\app\home\home.view.html" />
     <Content Include="Script\app\layout\footer.html" />
@@ -178,19 +128,14 @@
     <Content Include="Script\app\layout\page.controller.js" />
     <Content Include="Script\app\layout\page.html" />
     <Content Include="Script\app\layout\top_menu.html" />
-    <Content Include="Script\app\product\add\product.add.controller.js" />
-    <Content Include="Script\app\product\list\product.list.controller.js" />
-    <Content Include="Script\app\product\list\product.list.html" />
-    <Content Include="Script\app\product\product.service.js" />
     <Content Include="Script\app\product\product.module.js" />
     <Content Include="Script\app\product\product.route.js" />
-    <Content Include="Script\app\product\offer\product.offer.controller.js" />
-    <Content Include="Script\app\product\offer\product.offer.html" />
+    <Content Include="Script\app\product\view\product.view.controller.js" />
+    <Content Include="Script\app\product\view\product.view.html" />
     <Content Include="Script\app\subscribe\subscribe.module.js" />
     <Content Include="Script\app\subscribe\subscribe.route.js" />
     <Content Include="Script\app\subscribe\subscribe.controller.js" />
     <Content Include="Script\app\subscribe\subscribe.html" />
-    <Content Include="Script\app\subscribe\subscribe.service.js" />
     <Content Include="Style\css\animate.min.css" />
     <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\css\font-awesome.min.css" />
@@ -203,9 +148,7 @@
     <Content Include="Style\images\slider\slider-img-2.jpg" />
     <Content Include="Style\images\slider\slider-img-3.jpg" />
     <Content Include="Style\images\slider\slider-img-4.jpg" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -228,13 +171,6 @@
     <Content Include="Style\fonts\fontawesome-webfont.woff" />
     <Content Include="Style\fonts\FontAwesome.otf" />
     <Content Include="Style\fonts\ufonts.com_tw-cen-mt.ttf" />
-    <Content Include="Script\app\product\add\product.add.view.html" />
-    <Content Include="images\blog\.DS_Store" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="fonts\ufonts.com_tw-cen-mt.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -244,6 +180,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Script\app\product\add\" />
+    <Folder Include="Script\app\product\edit\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoodGuard.WebApi\FoodGuard.WebApi.csproj">

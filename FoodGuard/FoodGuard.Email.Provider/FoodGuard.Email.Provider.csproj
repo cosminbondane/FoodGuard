@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22C959D3-DE2E-4DD8-A78E-112F2FD4FEA7}</ProjectGuid>
+    <ProjectGuid>{C5330E2F-1CE1-4198-9F7F-133A0CD1029C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FoodGuard.Business</RootNamespace>
-    <AssemblyName>FoodGuard.Business</AssemblyName>
+    <RootNamespace>FoodGuard.Email.Provider</RootNamespace>
+    <AssemblyName>FoodGuard.Email.Provider</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,21 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper">
-      <HintPath>..\FoodGuard.DAL\bin\Debug\Dapper.dll</HintPath>
+    <Reference Include="Handlebars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22225d0bf33cd661, processorArchitecture=MSIL">
+      <HintPath>..\packages\Handlebars.Net.1.6.4\lib\Handlebars.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="SFP.Core.ServiceInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\SFP.Core.ServiceInjection.dll</HintPath>
-    </Reference>
-    <Reference Include="SFP.Data.Dapper">
-      <HintPath>..\FoodGuard.DAL\bin\Debug\SFP.Data.Dapper.dll</HintPath>
-    </Reference>
-    <Reference Include="SFP.Data.Database">
-      <HintPath>..\lib\SFP.Data.Database.dll</HintPath>
-    </Reference>
-    <Reference Include="SFP.Web.Api">
-      <HintPath>..\lib\SFP.Web.Api.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,16 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
-    <Compile Include="CharityBusiness.cs" />
-    <Compile Include="EmailBusiness.cs" />
-    <Compile Include="Enums\FoodGuardBusinessEnum.cs" />
-    <Compile Include="Exceptions\FoodGuardException.cs" />
-    <Compile Include="OfferBusiness.cs" />
-    <Compile Include="ProductBusiness.cs" />
+    <Compile Include="CharityEmailProvider.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EmailTemplateRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoodGuard.Business\FoodGuard.Business.csproj">
+      <Project>{22c959d3-de2e-4dd8-a78e-112f2fd4fea7}</Project>
+      <Name>FoodGuard.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FoodGuard.DAL\FoodGuard.DAL.csproj">
       <Project>{258e3fdd-1004-4a78-b0b9-69e21b73cdc8}</Project>
       <Name>FoodGuard.DAL</Name>

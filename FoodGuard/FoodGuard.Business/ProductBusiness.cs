@@ -11,7 +11,6 @@ namespace FoodGuard.Business
     {
         BaseDapperRepository<Product> ProductRepository = DependencyServiceInjection.Resolve<BaseDapperRepository<Product>>();
 
-
         public IEnumerable<Product> GetAllProducts()
         {
             return ProductRepository.GetAll();

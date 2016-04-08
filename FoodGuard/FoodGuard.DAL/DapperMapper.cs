@@ -82,4 +82,16 @@ namespace FoodGuard.DAL
             Map(f => f.Code).Column("Code");
         }
     }
+
+    public sealed class EmailTemplateMapper : ClassMapper<EmailTemplate>
+    {
+        public EmailTemplateMapper()
+        {
+            Schema("dbo");
+            Table("EmailTemplate");
+            Map(f => f.EmailTemplateId).Column("Id").Key(KeyType.Identity);
+            Map(f => f.Name).Column("Name");
+            Map(f => f.Html).Column("Html");
+        }
+    }
 }
