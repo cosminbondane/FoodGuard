@@ -25,7 +25,7 @@ namespace FoodGuard.WebApi.Controllers
         }
 
         [HttpGet]
-        public FoodGuardResponse<List<Product>> GetProductsByTypeId(int typeId)
+        public FoodGuardResponse<List<ProductProdType>> GetProductsByTypeId(int typeId)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace FoodGuard.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return HandleException<List<Product>>(ex);
+                return HandleException<List<ProductProdType>>(ex);
             }
         }
     }

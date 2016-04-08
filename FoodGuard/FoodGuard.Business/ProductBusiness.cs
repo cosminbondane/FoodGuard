@@ -17,9 +17,9 @@ namespace FoodGuard.Business
             return ProductRepository.GetAll();
         }
 
-        public List<Product> GetProductsByTypeId(int typeId)
+        public List<ProductProdType> GetProductsByTypeId(int typeId)
         {
-            List<Product> products = ProductRepository.ExecuteQuery<Product>(Constants.GetProductsByType,
+            List<ProductProdType> products = ProductRepository.ExecuteQuery<ProductProdType>(Constants.GetProductsByType,
                            new
                            {
                                typeId = typeId
