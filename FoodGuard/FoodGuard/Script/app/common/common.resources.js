@@ -15,7 +15,7 @@
             subscribe: function () { return $resource("/api/Subscribe/Subscribe"); },
             products: function () { return $resource("/api/Product/GetProducts") },
             productsByTypeId: function (typeId) { return $resource("/api/Product/GetProductsByTypeId") },
-            offersByTypeId: function (typeId, days) { return $resource("/api/Offer/GetOffersByTypeId") }
+            offersByTypeId: function (typeId, day) { return $resource("/api/Offer/GetOffersByTypeId") }
         };
 
         return service;
