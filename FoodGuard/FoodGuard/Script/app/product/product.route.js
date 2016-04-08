@@ -32,6 +32,6 @@
                 templateUrl: 'Script/app/product/add/product.add.view.html',
                 controller: 'productAddController',
                 controllerAs: 'vm'
-            });
+            })
     }
 })();

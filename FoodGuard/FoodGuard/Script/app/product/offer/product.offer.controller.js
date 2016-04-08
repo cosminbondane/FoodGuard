@@ -21,7 +21,7 @@
             var typeId = $state.params.id;
 
             if (typeId == 0) {
-                ProductService.getOffersByTypeId(0, 7).then(function (response) {
+                ProductService.getOffersByTypeId(0, 0).then(function (response) {
                     if (response != undefined) {
                         vm.products = response;
 
@@ -32,7 +32,7 @@
                 });
             }
             else {
-                ProductService.getOffersByTypeId(parseInt(typeId), 7).then(function (response) {
+                ProductService.getOffersByTypeId(0, 7).then(function (response) {
                     if (response != undefined) {
                         vm.products = response;
 

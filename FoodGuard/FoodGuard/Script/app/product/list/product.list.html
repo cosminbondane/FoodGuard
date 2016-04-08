@@ -1,26 +1,44 @@
-﻿<section id="price">
+﻿<section id="home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">your <span>Products</span></h1>
-                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                    <h1 class="heading wow fadeInUp h1-overlay" data-wow-duration="300ms" data-wow-delay="300ms"> your <span>Products</span> </h1>
+                    <br />
+                    <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        See your products below
+                        <br />
+                    </p>
+                </div>
+            </div><!-- .col-md-12 close -->
+        </div><!-- .row close -->
+    </div><!-- .containe close -->
+</section><!-- #subscribe close -->
+<section id="price">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
                     <div class="pricing-list">
                         <div class="title">
                             <h3>Category <span><a href="#/products/1" style="font-size: 20px;">Bakery</a>  <a href="#/products/2" style="font-size: 20px;">Dairy</a>  <a href="#/products/3" style="font-size: 20px;">Meat</a></span></h3>
                         </div>
-                        <ul>
-                            <li ng-repeat="product in vm.products" class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                                <div class="item">
-                                    <div class="item-title">
-                                        <h2>{{product.productName}}</h2>
-                                        <div class="border-bottom"></div>
-                                        <span>{{product.price}}$</span>
-                                    </div>
-                                    <p><i class="fa fa-clock-o"></i> {{product.expirationDate}}</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class="title">
+                                    <th>Product Name</th>
+                                    <th><a>Expiration Date</a></th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody ng-repeat="product in vm.products" class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                <tr>
+                                    <td>{{product.productName}}</td>
+                                    <td><i class="fa fa-clock-o"></i> {{product.expirationDate}}</td>
+                                    <td>$ {{product.price}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <!--<a class="btn btn-default pull-right wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="#contact-us" role="button">Add Product</a>-->
                         <!--<input ui-sref="products_add" type="button" value="Add" />-->
                     </div>
