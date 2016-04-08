@@ -16,17 +16,16 @@
 
         function init() {
 
-           ProductService.getProductList().then(function (response) {
+            ProductService.getProductList().then(function (response) {
                 if (response != undefined) {
                     vm.products = response;
 
                     angular.forEach(vm.products, function (item) {
                         item.isRight = isRight();
+                        item.newPrice = 100;
                     })
                 }
             });
-
-          
         }
 
         function isRight() {

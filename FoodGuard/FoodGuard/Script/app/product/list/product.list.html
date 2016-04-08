@@ -7,15 +7,15 @@
                     <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
                     <div class="pricing-list">
                         <div class="title">
-                            <h3>Expiring <span>this week</span></h3>
+                            <h3>Category <span>{{vm.category}}</span></h3>
                         </div>
                         <ul>
                             <li ng-repeat="product in vm.products" class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                                 <div class="item">
                                     <div class="item-title">
-                                        <h2>{{product.name}}</h2>
+                                        <h2>{{product.productName}}</h2>
                                         <div class="border-bottom"></div>
-                                        <span>{{product.newPrice}}$</span>
+                                        <span>{{product.price}}$</span>
                                     </div>
                                     <p><i class="fa fa-clock-o"></i> {{product.expirationDate}}</p>
                                 </div>

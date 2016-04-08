@@ -5,16 +5,27 @@
         .module('app.product')
         .controller('productListController', productListController);
 
-    productListController.$inject = ['ProductService'];
+    productListController.$inject = ['$state', 'ProductService'];
 
-    function productListController(ProductService) {
+    function productListController($state, ProductService) {
         var vm = this;
+        vm.category = 'Bakery';
 
-        ProductService.getProductList().then(function (result) {
-            vm.products = result;
-        }, function (error) {
-            alert(error.message);
-        });
+        var typeId = $state.params.id;
+
+        if (typeId == 0) {
+            ProductService.getProductList().then(function (result) {
+                vm.products = result;
+            }, function (error) {
+                alert(error.message);
+            });
+        } else {
+            ProductService.getProductsByTypeId(typeId).then(function (result) {
+                vm.products = result;
+            }, function (error) {
+                alert(error.message);
+            });
+        }
     }
 
 })();
