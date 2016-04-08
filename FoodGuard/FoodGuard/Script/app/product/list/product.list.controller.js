@@ -25,6 +25,10 @@
             }, function (error) {
                 alert(error.message);
             });
+
+            angular.forEach(vm.products, function (item) {
+                item.expirationDate = moment.utc(item.expirationDate).toDate();
+            })
         }
     }
 
