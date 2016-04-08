@@ -12,7 +12,7 @@
         var factory = function () { };
 
         var service = {
-            subscribe: function () { return $resource("/api/Subscribe/Subscribe"); },
+            subscribe: function () { return $resource("/api/Subscriber/Subscribe"); },
             products: function () { return $resource("/api/Product/GetProducts") },
             productsByTypeId: function (typeId) { return $resource("/api/Product/GetProductsByTypeId") },
             offersByTypeId: function (typeId, days) { return $resource("/api/Offer/GetOffersByTypeId") }
