@@ -882,3 +882,7 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 .h1-overlay:before {
     height:0px !important;
 }
+
+.orange-text {
+    color: #e43;
+}
