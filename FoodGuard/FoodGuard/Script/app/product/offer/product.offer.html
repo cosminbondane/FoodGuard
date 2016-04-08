@@ -5,7 +5,11 @@
                 <div class="block">
                     <div class="title">
                         <h1 class="heading heading-prod ">Check  <span>Out</span> our <span>Offer</span></h1>
-                        <h3><span><a href="#/offer/0" style="font-size:20px; float: left" ng-click="vm.expireNow()">Expiring this week</a></span>  <span><a href="#/offer/7" style="font-size:20px; float: right" ng-click="vm.expireNextWeek()">Expiring next week</a></span></h3>
+                        <br />
+                        <h3>
+                        <span>
+                            <a href="#/offer/0" class="white" style="font-size:20px; float: left" ng-click="vm.expireNow()">Expiring this week</a></span>  
+                            <span><a href="#/offer/7" class="white" style="font-size:20px; float: right" ng-click="vm.expireNextWeek()">Expiring next week</a></span></h3>
                     </div>
                     <ul class="wow fadeInLeft animated" data-wow-duration="300ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 300ms; animation-delay: 300ms; animation-name: fadeInLeft;">
                         <li ng-repeat="product in vm.products">
