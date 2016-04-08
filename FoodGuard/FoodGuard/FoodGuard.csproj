@@ -151,6 +151,10 @@
     <Content Include="Script\app\layout\page.controller.js" />
     <Content Include="Script\app\layout\page.html" />
     <Content Include="Script\app\layout\top_menu.html" />
+    <Content Include="Script\app\product\list\product.list.controller.js" />
+    <Content Include="Script\app\product\list\product.list.html" />
+    <Content Include="Script\app\product\offer\product.offer.controller.js" />
+    <Content Include="Script\app\product\offer\product.offer.html" />
     <Content Include="Script\app\product\product.module.js" />
     <Content Include="Script\app\product\product.route.js" />
     <Content Include="Script\app\product\view\product.view.controller.js" />

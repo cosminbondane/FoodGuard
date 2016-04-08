@@ -5,9 +5,9 @@
         .module('app.product')
         .controller('productOfferController', productOfferController);
 
-    productOfferController.$inject = ['ProductService'];
+    productOfferController.$inject = ['$state', 'ProductService'];
 
-    function productOfferController(ProductService) {
+    function productOfferController($state, ProductService) {
         var vm = this;
         vm.products = [];
         vm.right = 1;
@@ -16,15 +16,25 @@
 
         function init() {
 
-            ProductService.getProductList().then(function (response) {
-                if (response != undefined) {
-                    vm.products = response;
+            var typeId = $state.params.id;
 
-                    angular.forEach(vm.products, function (item) {
-                        item.isRight = isRight();
-                        item.newPrice = 100;
-                    })
-                }
+            if (typeId == 0) {
+                ProductService.getOffersByTypeId(0, 7).then(function (response) {
+                    if (response != undefined) {
+                        vm.products = response;
+                    }
+                });
+            }
+            else {
+                ProductService.getOffersByTypeId(parseInt(typeId), 7).then(function (response) {
+                    if (response != undefined) {
+                        vm.products = response;
+                    }
+                });
+            }
+
+            angular.forEach(vm.products, function (item) {
+                item.isRight = isRight();
             });
         }
 

@@ -11,9 +11,9 @@
         var vm = this;
         vm.category = 'Bakery';
 
-        var typeId = $state.params.id;
+        var typeId = parseInt($state.params.id);
 
-        if (typeId == 0) {
+        if (typeId === 0) {
             ProductService.getProductList().then(function (result) {
                 vm.products = result;
             }, function (error) {

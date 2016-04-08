@@ -60,6 +60,7 @@
         function getOffersByTypeId(typeId, days) {
             var deferred = $q.defer();
 
+            alert(typeId + " " + days);
             RestService.offersByTypeId(typeId, days).get().$promise.then(function (response) {
                 if (response.success) {
                     deferred.resolve(response.data);
