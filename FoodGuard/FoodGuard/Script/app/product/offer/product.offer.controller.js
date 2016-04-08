@@ -12,6 +12,8 @@
         vm.products = [];
         vm.right = 1;
 
+        vm.expireNextWeek = expireNextWeek;
+
         init();
 
         function init() {
@@ -57,6 +59,30 @@
             }
 
             return right;
+        }
+
+        function expireNextWeek() {
+            ProductService.getOffersByTypeId(0, 7).then(function (response) {
+                if (response != undefined) {
+                    vm.products = response;
+
+                    angular.forEach(vm.products, function (item) {
+                        item.isRight = isRight();
+                    });
+                }
+            });
+        }
+
+        function expireNow() {
+            ProductService.getOffersByTypeId(0, 0).then(function (response) {
+                if (response != undefined) {
+                    vm.products = response;
+
+                    angular.forEach(vm.products, function (item) {
+                        item.isRight = isRight();
+                    });
+                }
+            });
         }
     }
 
