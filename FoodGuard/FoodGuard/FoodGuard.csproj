@@ -140,10 +140,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Script\app\app.route.js" />
     <Content Include="Script\app\app.run.js" />
+    <Content Include="Script\app\common\common.module.js" />
+    <Content Include="Script\app\common\common.resources.js" />
     <Content Include="Script\app\home\home.route.js" />
     <Content Include="Script\app\home\home.view.html" />
     <Content Include="Script\app\layout\footer.html" />
@@ -151,12 +154,15 @@
     <Content Include="Script\app\layout\page.controller.js" />
     <Content Include="Script\app\layout\page.html" />
     <Content Include="Script\app\layout\top_menu.html" />
+    <Content Include="Script\app\product\add\product.add.controller.js" />
+    <Content Include="Script\app\product\add\product.add.view.html" />
     <Content Include="Script\app\product\list\product.list.controller.js" />
     <Content Include="Script\app\product\list\product.list.html" />
     <Content Include="Script\app\product\offer\product.offer.controller.js" />
     <Content Include="Script\app\product\offer\product.offer.html" />
     <Content Include="Script\app\product\product.module.js" />
     <Content Include="Script\app\product\product.route.js" />
+    <Content Include="Script\app\product\product.service.js" />
     <Content Include="Script\app\product\view\product.view.controller.js" />
     <Content Include="Script\app\product\view\product.view.html" />
     <Content Include="Script\app\subscribe\subscribe.module.js" />
@@ -198,6 +204,11 @@
     <Content Include="Style\fonts\fontawesome-webfont.woff" />
     <Content Include="Style\fonts\FontAwesome.otf" />
     <Content Include="Style\fonts\ufonts.com_tw-cen-mt.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\ufonts.com_tw-cen-mt.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -207,7 +218,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Script\app\product\add\" />
     <Folder Include="Script\app\product\edit\" />
   </ItemGroup>
   <ItemGroup>

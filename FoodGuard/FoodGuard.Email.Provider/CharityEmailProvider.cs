@@ -11,7 +11,7 @@ namespace FoodGuard.Email.Provider
     {
         protected CharityBusiness CharityBusiness = new CharityBusiness();
 
-        public void Start()
+        public void StartForAll()
         {
             var allCharities = CharityBusiness.GetAll();
             foreach (var charity in allCharities)
@@ -23,6 +23,11 @@ namespace FoodGuard.Email.Provider
 
                 EmailHelper.SendAsHtml<object>("New Offer", "guard@food.com", charity.Email, "New Offer", x);
             }
+        }
+
+        public void StartForOne(string toEmail)
+        {
+            EmailHelper.SendAsHtml<object>("New Offer", "", toEmail, "Welcome to FoodGuard", new object());
         }
     }
 }
