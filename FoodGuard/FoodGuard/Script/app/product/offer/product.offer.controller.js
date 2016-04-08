@@ -22,6 +22,10 @@
                 ProductService.getOffersByTypeId(0, 7).then(function (response) {
                     if (response != undefined) {
                         vm.products = response;
+
+                        angular.forEach(vm.products, function (item) {
+                            item.isRight = isRight();
+                        });
                     }
                 });
             }
@@ -29,13 +33,15 @@
                 ProductService.getOffersByTypeId(parseInt(typeId), 7).then(function (response) {
                     if (response != undefined) {
                         vm.products = response;
+
+                        angular.forEach(vm.products, function (item) {
+                            item.isRight = isRight();
+                        });
                     }
                 });
             }
 
-            angular.forEach(vm.products, function (item) {
-                item.isRight = isRight();
-            });
+          
         }
 
         function isRight() {
