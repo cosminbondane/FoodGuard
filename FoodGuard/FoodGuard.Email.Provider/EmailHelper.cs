@@ -31,6 +31,7 @@ namespace FoodGuard.Email.Provider
                 mail.To.Add(toEmailAddress);
                 mail.Subject = subject;
                 mail.IsBodyHtml = true;
+                mail.Body = content;
 
                 try
                 {
