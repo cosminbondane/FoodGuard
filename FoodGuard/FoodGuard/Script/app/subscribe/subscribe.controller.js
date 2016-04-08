@@ -5,9 +5,9 @@
         .module('app.subscribe')
         .controller('subscribeController', subscribeController);
 
-    subscribeController.$inject = [];
+    subscribeController.$inject = ['SubscribeService'];
 
-    function subscribeController() {
+    function subscribeController(SubscribeService) {
         var vm = this;
 
         vm.subscribe = subscribe;
@@ -18,8 +18,13 @@
         }
 
         function subscribe() {
-            SubscribeService.subscribe(vm.email).then(function (response) {
+            var charity = {
+                Email: vm.email
+            };
+
+            SubscribeService.subscribe(charity).then(function (response) {
                 if (response.success) {
+                    vm.email = "";
                 }
             });
         }

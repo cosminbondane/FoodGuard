@@ -101,6 +101,7 @@
     <Compile Include="Base\FoodGuardResponse.cs" />
     <Compile Include="Controllers\OfferController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\SubscriberController.cs" />
     <Compile Include="Model\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

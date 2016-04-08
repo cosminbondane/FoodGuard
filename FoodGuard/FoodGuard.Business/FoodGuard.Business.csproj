@@ -64,6 +64,7 @@
     <Compile Include="OfferBusiness.cs" />
     <Compile Include="ProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubscriberBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoodGuard.DAL\FoodGuard.DAL.csproj">

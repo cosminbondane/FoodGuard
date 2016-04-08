@@ -9,9 +9,9 @@
     /* @ngInject */
     function SubscribeService(REST) {
         return {
-            subscribe: function (email) {
-                return REST.subscribe().save(email).$promise;
-           }
+            subscribe: function (charity) {
+                return REST.subscribe().save(charity).$promise;
+            }
         }
     }
 })();
