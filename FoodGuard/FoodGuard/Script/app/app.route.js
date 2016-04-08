@@ -3,8 +3,11 @@
 
     angular
         .module('app')
-        .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
-            $urlRouterProvider.otherwise("/home");
+        .config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function ($urlRouterProvider, $stateProvider, $locationProvider) {
+            
+            $urlRouterProvider.when('', '/default');
+
+            $urlRouterProvider.otherwise('/default');
 
             $stateProvider
                 .state('default', {
